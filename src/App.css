@@ -1,0 +1,39 @@
+.app {
+  text-align: center;
+}
+
+.upload-page {
+  padding: 20px;
+}
+
+.upload-page input {
+  margin: 10px;
+}
+
+.upload-page button {
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.source-div,
+.target-div {
+  width: 45%;
+  min-height: 200px;
+  padding: 10px;
+  border: 2px dashed #ccc;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+img {
+  width: 100px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+  margin: 10px;
+  cursor: grab;
+}

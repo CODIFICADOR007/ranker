@@ -1,0 +1,246 @@
+/* General Styles */
+.drag-and-drop-page {
+  display: flex;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #121212;
+  background-image: linear-gradient(145deg, #1c1c1c 0%, #0e0e0e 100%);
+  color: #e0e0e0;
+  font-family: "Inter", sans-serif; /* Clean modern font */
+}
+
+/* Rank Container */
+.rank-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+}
+
+/* Rank Slot with Enhanced Color Visibility */
+.rank-slot {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Enhanced Rank 1 Slot */
+.rank-slot.rank-1 {
+  background: linear-gradient(
+    145deg,
+    #004d40,
+    #00bfa5
+  ); /* Subtle Green Gradient */
+  border-left: 5px solid #00ff7f; /* Bright Neon Green Border */
+  box-shadow: 0 0 10px rgba(0, 255, 127, 0.4); /* Soft Glow */
+}
+
+.rank-slot.rank-1 .rank-label h3 {
+  color: #e0f7fa; /* Light Cyan for contrast */
+}
+.rank-slot.rank-1:hover {
+  box-shadow: 0 0 20px #00e676, 0 0 30px #00e676;
+}
+/* Enhanced Rank 2 Slot */
+.rank-slot.rank-2 {
+  background: linear-gradient(
+    145deg,
+    #33691e,
+    #8bc34a
+  ); /* Earthy Green Gradient */
+  border-left: 5px solid #66bb6a; /* Light Neon Green Border */
+  box-shadow: 0 0 10px rgba(102, 187, 106, 0.4); /* Soft Glow */
+}
+.rank-slot.rank-2:hover {
+  box-shadow: 0 0 20px #66bb6a, 0 0 30px #66bb6a;
+}
+.rank-slot.rank-2 .rank-label h3 {
+  color: #f1f8e9; /* Light Green for contrast */
+}
+
+/* Enhanced Rank 3 Slot */
+.rank-slot.rank-3 {
+  background: linear-gradient(
+    145deg,
+    #f57f17,
+    #ffeb3b
+  ); /* Golden Yellow Gradient */
+  border-left: 5px solid #ffee58; /* Bright Yellow Border */
+  box-shadow: 0 0 10px rgba(255, 238, 88, 0.4); /* Soft Glow */
+}
+
+.rank-slot.rank-3 .rank-label h3 {
+  color: #fffde7; /* Light Yellow for contrast */
+}
+.rank-slot.rank-3:hover {
+  box-shadow: 0 0 20px #ffee58, 0 0 30px #ffee58;
+}
+/* Enhanced Rank 4 Slot */
+.rank-slot.rank-4 {
+  background: linear-gradient(145deg, #e65100, #ff9800); /* Orange Gradient */
+  border-left: 5px solid #ffa726; /* Neon Orange Border */
+  box-shadow: 0 0 10px rgba(255, 167, 38, 0.4); /* Soft Glow */
+}
+.rank-slot.rank-4:hover {
+  box-shadow: 0 0 20px #ffa726, 0 0 30px #ffa726;
+}
+.rank-slot.rank-4 .rank-label h3 {
+  color: #fff3e0; /* Light Orange for contrast */
+}
+
+/* Enhanced Rank 5 Slot */
+.rank-slot.rank-5 {
+  background: linear-gradient(145deg, #b71c1c, #f44336); /* Red Gradient */
+  border-left: 5px solid #ef5350; /* Neon Red Border */
+  box-shadow: 0 0 10px rgba(239, 83, 80, 0.4); /* Soft Glow */
+}
+.rank-slot.rank-5:hover {
+  box-shadow: 0 0 20px #ef5350, 0 0 30px #ef5350;
+}
+.rank-slot.rank-5 .rank-label h3 {
+  color: #ffebee; /* Light Pink for contrast */
+}
+
+/* Enhanced Rank 6 Slot */
+.rank-slot.rank-6 {
+  border-color: #d32f2f;
+  box-shadow: 0 0 20px #d32f2f, 0 0 30px #d32f2f;
+  background: linear-gradient(145deg, #3a0000, #1e0000);
+}
+
+.rank-slot.rank-6 .rank-label h3 {
+  color: #f3e5f5; /* Light Purple for contrast */
+}
+.rank-slot.rank-6:hover {
+  box-shadow: 0 0 30px #d32f2f, 0 0 40px #d32f2f;
+  background: linear-gradient(145deg, #4b0000, #2b0000);
+}
+/* Rank Label with Color Accent */
+.rank-label h3 {
+  color: #e0e0e0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  padding-left: 10px;
+}
+
+/* Rank Images Container */
+.rank-images {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+/* Ranked Images */
+.ranked-image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.ranked-image:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+/* Image List */
+.image-list {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Draggable Images */
+.draggable-image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+/* Enlarged Image Container */
+.enlarged-image-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 10, 10, 0.85); /* Darker overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Enlarged Image */
+.enlarged-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8); /* Stronger shadow */
+}
+
+/* Close Button */
+.close-enlarged {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #bdbdbd;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-enlarged:hover {
+  color: #fbc02d; /* Neon yellow on hover */
+}
+
+/* Load More Button */
+.load-more-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff; /* Bright blue button */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1001;
+  transition: background-color 0.3s ease;
+}
+
+.load-more-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Game Heading */
+.game-heading h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.2em;
+  color: #f5f5f5;
+  margin-bottom: 25px;
+  letter-spacing: 0.05em;
+}

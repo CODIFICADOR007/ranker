@@ -1,0 +1,57 @@
+/* src/components/UploadPage.css */
+.upload-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.drop-box {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  min-height: 200px;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+.drop-box h3 {
+  margin: 0;
+}
+
+.image-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.image-container {
+  position: relative;
+}
+
+.preview-image {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  object-fit: cover;
+}
+
+.remove-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.next-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
