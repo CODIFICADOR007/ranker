@@ -1,7 +1,5 @@
 # Project is created for fun purpose not to intend any harm just a project where rank can be given to objects based on priority or superiority
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+link for review : https://66bf736dd9e6ac521b7391f8--effulgent-druid-53669b.netlify.app/
 ## Available Scripts
 
 In the project directory, you can run:
