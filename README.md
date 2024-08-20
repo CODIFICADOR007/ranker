@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Project is created for fun purpose not to intend any harm just a project where rank can be given to objects based on priority or superiority
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
